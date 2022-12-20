@@ -12,7 +12,8 @@ def SH_Choice():
     for n in heroes:
         rating_list.append([get_intelligens(n), n])
     rating_list.sort(reverse=True)
-    return f'{rating_list[0][1]} - это самый умный супергерой между: {", ".join(heroes)}'
+    return f'{rating_list[0][1]} - это самый умный супергерой среди: {", ".join(heroes)}\n'\
+           f'Его уровень интеллекта {rating_list[0][0]} единиц'
 
 
 print(SH_Choice())
